@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./assets/reset.css">
+    <link rel="stylesheet" type="text/css" href="./assets/style.css" />
+    <title>Homework4</title>
+</head>
+<body>
+<!--Nav bar with high score and time left-->
+    <nav id="navBar">
+        <p id="highScore">High Score</p>
+        <p id="timeLeft">Time</p>
+    </nav>
+<!--Start Button for quiz-->
+    <div class="startBtn"><button>Start Quiz</button></div>
+
+<!--    Info Box-->
+    <div class="infoBox">
+        <h1 id="title">Coding Quiz</h1>
+        <ul class="infoList">
+            <li class="info">Answer the following code-related questions within the time limit.</li>
+            <li class="info">If you Answer is wrong, it will take <span>15 seconds</span> of the clock.</li>
+            <li class="info">Compare your score with previews players.</li>
+            <li class="info"></li>
+            <li class="info"></li>
+            <li class="info"></li>
+        </ul>
+    <div class="buttons">
+        <button class="quit">Quit</button>
+        <button class="continue">Continue</button>
+    </div>
+    </div>
+<!--        Quiz box-->
+    <div class="quizBox">
+        <header>
+            <div class="title">Coding Quiz</div>
+            <div class="timer">
+                <div class="timeText">Time Left</div>
+                <div class="timerSec">15</div>
+            </div>
+        </header>
+        <section>
+            <div class="queText">
+                <span>This is the question</span>
+            </div>
+            <div class="optionList">
+                <div class="option">
+                    answer
+                </div>
+                <div class="option">
+                   answer
+                </div>
+                <div class="option">
+                    answer
+                </div>
+                <div class="option">
+                    answer
+                </div>
+            </div>
+        </section>
+
+<!--        Quiz Box Footer-->
+        <footer>
+            <div class="totalQue">
+            <span><p>2</p> <p>of</p> <p>5</p>Questions</span>
+            </div>
+            <button class="nextBtn">Next</button>
+        </footer>
+    </div>
+
+    <!-- High Score-->
+    <div class="inputScore">
+        <h1 class="ThankYou">Thank you!</h1>
+        <p class="yourScoreIs">Your score is</p>
+        <p class="inputInitials">Enter initials<input><button>Submit</button></p>
+
+
+    </div>
+<script src="./assets/script.js"></script>
+</body>
+</html>
+
