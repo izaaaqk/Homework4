@@ -196,6 +196,18 @@ section .optionList .option:hover{
     border-color: blue;
 }
 
+section .optionList .option .correct{
+    color: ghostwhite;
+    background: greenyellow;
+    border-color: green;
+}
+
+section .optionList .option .incorrect{
+    color: black;
+    background: red;
+    border-color: crimson;
+}
+
 section .optionList .option:last-child{
     margin-bottom: 0;
 }
