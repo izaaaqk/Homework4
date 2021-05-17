@@ -11,7 +11,9 @@ body{
 
 .startBtn,
 .infoBox,
-.quizBox{
+.quizBox,
+.inputScore,
+.highScore{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -30,10 +32,19 @@ body{
 }
 
 .infoBox{
-    display: none;
     width: 540px;
     background-color: lavenderblush;
     border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+}
+
+.infoBox.activeInfo{
+    z-index: 5;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
 }
 
 .infoBox #title{
@@ -74,7 +85,8 @@ body{
 }
 
 .infoBox .buttons button,
-footer .nextBtn{
+footer .nextBtn,
+.highScore .restartBnt {
     margin: 0 10px;
     height: 35px;
     width: 100px;
@@ -93,10 +105,12 @@ footer .nextBtn:hover{
 }
 
 .quizBox{
-    display: none;
     width: 550px;
     background: lavenderblush;
     border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
 }
 
 .quizBox header{
@@ -106,7 +120,6 @@ footer .nextBtn:hover{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-radius: 5px 5px 0 0;
     border-bottom: 1px solid blueviolet;
 }
 
@@ -208,4 +221,60 @@ section .optionList .option:last-child{
     width: 540px;
     background-color: lavenderblush;
     border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+}
+
+
+.inputScore .thankYou{
+    font-size: 30px;
+    font-weight: 600;
+    padding: 0 30%;
+    height: 70px;
+    background: lavenderblush;
+    display: flex;
+    align-items: center;
+}
+
+.inputScore .yourScoreIs{
+    font-size: 20px;
+    padding: 45px 35px;
+}
+
+.inputScore .inputInitials{
+    font-size: 20px;
+    padding: 0 30px 40px;
+}
+.highScore{
+    width: 540px;
+    background-color: lavenderblush;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+}
+.highScore .clearBnt{
+    margin: 0 10px;
+    height: 35px;
+    width: 200px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.highScore section{
+    padding: 30px;
+}
+.highScore .hsTile{
+    font-size: 40px;
+    font-weight: 600;
+    padding: 0 30px 30px;
+}
+.hsBtns{
+    padding-top: 30px;
+}
+
+.highScore span{
+    color: crimson;
 }
